@@ -16,11 +16,18 @@
         backface-visibility: hidden;
         border-radius: 5px;
         overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
    
 
         &--front {
-            background-color: $color-white;
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.5),
+                rgba($color-primary-dark, 0.5)),
+                url(../img/deadline.jpg);
+        background-size: cover;
+        height: 50rem;
+        
         }
 
         &--back {
@@ -41,15 +48,16 @@
     }
 
     //front side styling
-    &__picture {
-        background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary-light, 0.5),
-                rgba($color-primary-dark, 0.5));
-        background-size: cover;
-        height: 23rem;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
-    }   
+    // &__picture {
+    //     background-image: linear-gradient(
+    //             to right bottom,
+    //             rgba($color-primary-light, 0.5),
+    //             rgba($color-primary-dark, 0.5)),
+    //             url(../img/deadline.jpg);
+    //     background-size: cover;
+    //     height: 23rem;
+    //     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
+    // }   
 
     &__heading {
         font-size: 2.8rem;
@@ -80,7 +88,9 @@
         ul {
             list-style: none;
             width: 80%;
-            margin: 0 auto;
+            margin: 4rem auto;
+            color: $color-white;
+
 
             li {
                 text-align: center;
