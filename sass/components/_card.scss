@@ -23,15 +23,23 @@
             background-image: linear-gradient(
                 to right bottom,
                 rgba($color-primary-light, 0.5),
-                rgba($color-primary-dark, 0.5)),
-                url(../img/deadline.jpg);
-        background-size: cover;
-        height: 50rem;
-        
+                rgba($color-primary-dark, 0.5));
         }
 
+        &--front img {
+
+                
+                // url(../img/deadline.jpg);
+        background-size: cover;
+        height: 50rem;
+        opacity: 80%;
+
+        }
+
+        
+
         &--back {
-            background-image: linear-gradient(
+            background: linear-gradient(
                 to right bottom,
                 rgba($color-primary-light, 0.8),
                 rgba($color-primary-dark, 0.8));
