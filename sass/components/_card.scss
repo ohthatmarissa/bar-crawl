@@ -17,7 +17,29 @@
         border-radius: 5px;
         overflow: hidden;
         box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
-   
+
+        &--front img {  
+            // url(../img/deadline.jpg);
+            background-size: cover;
+            height: 50rem;
+            opacity: 80%;
+
+                // &::before {  
+                //     background: linear-gradient(
+                //         to right bottom,
+                //         rgba($color-primary-light, 0.5),
+                //         rgba($color-primary-dark, 0.5));
+                // }
+            &.overlay{
+                z-index: 100;
+                background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.5),
+                rgba($color-primary-dark, 0.5));
+ 
+            }
+        }
+
 
         &--front {
             background-image: linear-gradient(
@@ -26,17 +48,6 @@
                 rgba($color-primary-dark, 0.5));
         }
 
-        &--front img {
-
-                
-                // url(../img/deadline.jpg);
-        background-size: cover;
-        height: 50rem;
-        opacity: 80%;
-
-        }
-
-        
 
         &--back {
             background: linear-gradient(
@@ -112,3 +123,4 @@
         }
     }
 }  
+
